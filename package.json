@@ -17,6 +17,9 @@
   ],
   "author": "derrad",
   "license": "MIT",
+    "bugs": {
+    "url": "https://github.com/derrad/zadruga.git/issues"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "ejs": "^2.5.2",

@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
- var Schema = mongoose.Schema,
+var Schema = mongoose.Schema,
      ID  = Schema.ObjectId;
 
 var sfDrzave = new Schema({
@@ -11,6 +11,9 @@ var sfDrzave = new Schema({
    NameUser: {type:String}
 
 },
+
+
+
 {
  timestamps: { createdAt: 'created_at' }
 },
@@ -20,3 +23,5 @@ var sfDrzave = new Schema({
 );
 
 module.exports = mongoose.model('sfDrzave', sfDrzave);
+
+//drzave model kod zadruga

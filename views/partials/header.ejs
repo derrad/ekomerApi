@@ -1,0 +1,78 @@
+<div ng-controller="menuCtrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">{{::title}}</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li ng-click="setIndex(0)" ng-class="(index==0) ? 'active' : ''">
+                        <a ui-sref="/">Home</a>
+                    </li>
+                    <li ng-click="setIndex(1)" ng-class="(index==1) ? 'active' : ''">
+                        <a ui-sref="/">Obrade</a>
+                    </li>
+
+                   
+                    <li ng-click="setIndex(2)" ng-class="(index==2) ? 'active' : ''">
+                        <a ui-sref="/">Pregledi</a>
+                    </li>
+
+                    <li ng-click="setIndex(3)" ng-class="(index==3) ? 'active' : ''">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sifarnik <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            <li><a ui-sref="/">Kupci</a></li>
+                             <li><a ui-sref="/">Zadrugari</a></li>
+                            <li class="divider"></li>
+                            <li><a ui-sref="/">Zanimanja</a></li>
+                            <li><a ui-sref="posao">Poslovi</a></li>
+                            <li class="divider"></li>
+                            <li><a ui-sref="/">Države</a></li>
+                            <li><a ui-sref="/">Opštine</a></li>
+                            <li><a ui-sref="/">Mesta</a></li>
+
+                            
+
+                          </ul>
+                    </li>
+
+
+
+                                         
+                    <li class="dropdown" ng-click="setIndex(4)" ng-class="(index==4) ? 'active' : ''" >
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opcije <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a ui-sref="vlasnik">Vlasnik</a></li>
+                            <li><a ui-sref="/">Konstante</a></li>
+                            <li><a ui-sref="/">Fond sati</a></li>
+                            <li class="divider"></li>
+                            <li><a ui-sref="/">Parametri</a></li>
+                            <li><a ui-sref="/">Radnik</a></li>
+                    </ul>
+                    </li>
+
+                    <li ng-click="setIndex(5)" ng-class="(index==5) ? 'active' : ''">
+                        <a ui-sref="contact">Kontakt</a>
+                    </li>
+                   
+
+                    <li ng-click="setIndex(6)" ng-class="(index==6) ? 'active' : ''">
+                        <a  ui-sref="help">Help</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+</div>

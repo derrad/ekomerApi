@@ -1,0 +1,53 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container" ng-app="ZADRUGA">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+
+    <!-- Page Content -->
+    <section>
+        <div class="container">
+           <div ui-view>
+
+
+           </div>
+  
+            
+        </div>
+   </section>
+
+    <!-- Depedency LIB-->
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.js"></script>
+    <script type="text/javascript" src="lib/angular-resource.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="lib/spin.min.js"></script>
+    <script type="text/javascript" src="lib/ladda.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ladda.min.js"></script>
+
+
+    
+
+      <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>-->
+      
+      <script type="text/javascript" src="app/mainContrl.js"></script>
+      <script  type="text/javascript" src="app/app.js"></script>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+</body>
+</html>

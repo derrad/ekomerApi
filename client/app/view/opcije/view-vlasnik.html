@@ -1,0 +1,46 @@
+<div ng-controller="vlasnikCtrl">
+
+ <div class="jumbotron">
+    
+     <h1>VLASNIK</h1>
+
+       <hr>
+  
+        <form ng-submit="createVlasnik()">
+            <input type="text" placeholder="Vlasnik name" ng-model="Ime"></input><br/>
+            <input type="text" placeholder="Adresa" ng-model="Adresa"></input><br/>
+
+            <input type="text" placeholder="Mesto" ng-model="Mesto"></input><br/>
+            <input type="text" placeholder="PttReon" ng-model="PttReon"></input><br/>
+            <input type="text" placeholder="PttPak" ng-model="PttPak"></input><br/>
+            <input type="text" placeholder="Direktor" ng-model="Direktor"></input><br/>
+            <input type="text" placeholder="KomRukovac" ng-model="KomRukovac"></input><br/>
+            <input type="text" placeholder="Blagajnik" ng-model="Blagajnik"></input><br/>
+            <input type="text" placeholder="Pib" ng-model="Pib"></input><br/>
+            <input type="text" placeholder="MatBroj" ng-model="MatBroj"></input><br/>
+            <input type="text" placeholder="SifDelat" ng-model="SifDelat"></input><br/>
+            <input type="text" placeholder="PdvBroj" ng-model="PdvBroj"></input><br/>
+            <input type="text" placeholder="Sud" ng-model="Sud"></input><br/>
+            <input type="text" placeholder="UplRacPorJed" ng-model="UplRacPorJed"></input><br/>
+            <input type="text" placeholder="NazPorJed" ng-model="NazPorJed"></input><br/>
+
+          
+          <button type="submit">Add vlasnik</button>
+        </form> 
+
+       <h4>There are {{vlasnik.length}} vlasnik</h4>
+        <ul>
+          <li ng-repeat="vlas in vlasnik">
+            {{vlas.Ime}}
+            {{vlas.Mesto}} 
+          </li>
+        </ul>
+         
+</div>
+
+
+
+
+   
+
+</div>

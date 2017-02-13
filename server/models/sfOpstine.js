@@ -2,8 +2,7 @@ var mongoose = require('mongoose');
 var relationship = require("mongoose-relationship");
 var Drzave = require('./server/models/sfDrzave');; 
 
-
- var Schema = mongoose.Schema,
+var Schema = mongoose.Schema,
      ID  = Schema.ObjectId;
 
 var sfOpstine = new Schema({

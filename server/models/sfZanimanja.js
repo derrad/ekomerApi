@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
  var Schema = mongoose.Schema,
      ID  = Schema.ObjectId;
 
-
 var sfZanimanja = new Schema({
    IDZanimanjaID:{type:Schema.Types.Mixed},
    Sifra  :{ type: String },

@@ -11,7 +11,6 @@ var apParametar = new Schema({
    VredNumeric:{type:Number,default:0},
    Opis  :{ type: String },
    NameUser: {type:String}
-
 },
 {
  timestamps: { createdAt: 'created_at' }

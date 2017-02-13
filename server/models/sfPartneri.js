@@ -3,7 +3,6 @@ var mongoose = require('mongoose');
  var Schema = mongoose.Schema,
      ID  = Schema.ObjectId;
 
-
 var sfPartnerRacun = new Schema({
      Naziv   : { type: String, required: [true,'Naziv je obavezan !!!'] },
      Racun   : { type: String, required: [true,'Racun je obavezan !!!'] },

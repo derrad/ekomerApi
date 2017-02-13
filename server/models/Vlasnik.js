@@ -11,7 +11,6 @@ var Schema = mongoose.Schema,
 //    sku: String
 // });
 
-
 var Vlasnik = new Schema({
    Ime : { type: String, default: 'default' },
    Adresa :{ type: String },
